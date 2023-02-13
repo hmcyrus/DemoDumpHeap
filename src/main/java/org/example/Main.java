@@ -18,8 +18,8 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Dump memory heap of Java process!");
-        String pid = "5786";
-        String dumpFile = System.getProperty("user.home") + "/Desktop/dump_" + System.currentTimeMillis() + ".hprof";
+        String pid = "5268";
+        String dumpFile = "/workspaces/DemoDumpHeap/dump_" + System.currentTimeMillis() + ".hprof";
         try {
             connectAndDumpHeap(pid, dumpFile);
             System.out.println("finish dump heap to file " + dumpFile);
